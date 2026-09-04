@@ -9,7 +9,9 @@ body:
     id: scope
     attributes:
       label: В каком месте произошли изменения?
-      placeholder: 'Например: Изменился алгоритм library@1.1.1; или: в framework@iOS_SDK-v1.1.1 изменился принимаемый тип данных'
+      placeholder: |
+        - Изменился алгоритм library@1.1.1
+        - В framework@iOS_SDK-v1.1.1 изменился принимаемый тип данных
     validations:
       required: true
 
