@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitLab
+    url: https://gitlab.talala.la
+    about: Репозитории и проекты Nutson в GitLab
+  - name: Jira
+    url: https://noosphere-tech.atlassian.net/jira
+    about: Задачи Nutson в Jira
+  - name: PostHog
+    url: https://posthog.talala.la
+    about: Аналитика Nutson в PostHog
+  - name: Ежедневный процесс и ведение задач
+    url: https://noosphere-tech.atlassian.net/wiki/spaces/SAC/pages/1258651649
+    about: Общие правила создания и ведения задач

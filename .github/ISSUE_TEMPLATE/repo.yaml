@@ -1,0 +1,20 @@
+name: Repo
+description: Создание репозитория
+title: '[Repo] '
+type: 'Repo'
+assignees:
+  - zebesh
+body:
+  - type: input
+    id: repo-name
+    attributes:
+      label: Название репы
+    validations:
+      required: true
+
+  - type: textarea
+    id: specs
+    attributes:
+      label: Для чего нужна репа?
+    validations:
+      required: true

@@ -1,0 +1,123 @@
+name: Service
+description: Описание назначения и контрактов сервиса
+title: '[Service] '
+type: Service
+assignees:
+  - TorinAsakura
+body:
+  - type: input
+    id: service-name
+    attributes:
+      label: Название сервиса
+      description: Укажи устойчивое имя сервиса.
+      placeholder: 'Например: account-service'
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Назначение
+      description: Опиши, зачем существует сервис и какую потребность продукта или системы он закрывает.
+      placeholder: Сервис нужен для...
+    validations:
+      required: true
+
+  - type: textarea
+    id: responsibilities
+    attributes:
+      label: Ответственность
+      description: Перечисли функции сервиса и решения или данные, за которые он отвечает.
+      placeholder: Сервис отвечает за...
+    validations:
+      required: true
+
+  - type: textarea
+    id: contracts
+    attributes:
+      label: Контракты
+      description: Для каждого входящего и исходящего HTTP/gRPC API, события, команды или задания укажи имя или схему, направление, назначение и потребителей. Напиши «Нет», если контрактов нет.
+      placeholder: |
+        - Входящий HTTP API
+          - Имя или схема: ...
+          - Направление: в сервис
+          - Назначение: ...
+          - Потребители: ...
+        - Исходящее событие
+          - Имя или схема: ...
+          - Направление: из сервиса
+          - Назначение: ...
+          - Потребители: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: interactions
+    attributes:
+      label: Взаимодействия
+      description: Укажи, кто вызывает сервис, кого вызывает он, используемый протокол и синхронное или асинхронное взаимодействие.
+      placeholder: |
+        - Клиент -> сервис
+          - Протокол: HTTP
+          - Режим: синхронно
+        - Сервис -> зависимость
+          - Протокол: gRPC
+          - Режим: синхронно
+    validations:
+      required: true
+
+  - type: textarea
+    id: interfaces
+    attributes:
+      label: Интерфейсы
+      description: Перечисли endpoints, handlers, consumers и jobs, предоставляемые сервисом. Напиши «Нет» для отсутствующих категорий.
+      placeholder: |
+        - Endpoints: ...
+        - Handlers: ...
+        - Consumers: ...
+        - Jobs: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: data
+    attributes:
+      label: Данные
+      description: Укажи, что сервис хранит, читает и пишет, а также источник истины для этих данных.
+      placeholder: |
+        - Хранит: ...
+        - Читает: ...
+        - Пишет: ...
+        - Источник истины: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Совместимость
+      description: Опиши breaking changes, затронутых потребителей и миграцию. Напиши «Нет», если изменений совместимости нет.
+      placeholder: |
+        - Breaking changes: ...
+        - Затронутые потребители: ...
+        - Миграция: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification
+    attributes:
+      label: Как проверить
+      description: Опиши наблюдаемые сценарии, подтверждающие назначение и контракты сервиса.
+      placeholder: |
+        1. Сценарий
+           - Контекст: ...
+           - Действие: ...
+           - Наблюдаемый результат: ...
+
+        2. Сценарий
+           - Контекст: ...
+           - Действие: ...
+           - Наблюдаемый результат: ...
+    validations:
+      required: true
