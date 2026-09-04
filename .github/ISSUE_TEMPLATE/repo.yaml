@@ -3,7 +3,7 @@ description: Создание репозитория
 title: '[Repo] '
 type: 'Repo'
 assignees:
-  - TorinAsakura
+  - zebesh
 body:
   - type: input
     id: repo-name

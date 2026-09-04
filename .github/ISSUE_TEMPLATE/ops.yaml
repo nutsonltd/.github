@@ -3,7 +3,7 @@ description: Operations Tasks
 title: '[OPS] '
 type: OPS
 assignees:
-  - TorinAsakura
+  - zebesh
 body:
   - type: dropdown
     id: infra_segment
